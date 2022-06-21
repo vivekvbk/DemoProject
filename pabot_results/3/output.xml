@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220620 11:59:14.998" rpa="false" schemaversion="3">
+<suite id="s1" name="testCases" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases">
+<suite id="s1-s1" name="TC 4" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot">
+<test id="s1-s1-t1" name="Login into npcommerce" line="11">
+<kw name="Opening Browser" library="resource">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Login into Nopcommerce</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:15.584" endtime="20220620 11:59:15.584"/>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 11:59:15.585" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 11:59:15.585" endtime="20220620 11:59:19.852"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 11:59:19.854" level="INFO">Opening url 'https://www.nopcommerce.com/en'</msg>
+<status status="PASS" starttime="20220620 11:59:19.852" endtime="20220620 11:59:30.460"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 11:59:30.461" endtime="20220620 11:59:30.693"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.582" endtime="20220620 11:59:30.693"/>
+</kw>
+<kw name="LoginTest" library="resource">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>(//*[name()='svg'])[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 11:59:30.697" level="INFO">Simulating Mouse Over on element '(//*[name()='svg'])[2]'.</msg>
+<status status="PASS" starttime="20220620 11:59:30.695" endtime="20220620 11:59:31.044"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:31.046" level="INFO">Clicking element '//span[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:31.045" endtime="20220620 11:59:32.810"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:32.811" level="INFO">Typing text 'vivekvbk' into text field 'id:Username'.</msg>
+<status status="PASS" starttime="20220620 11:59:32.810" endtime="20220620 11:59:33.038"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:33.039" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20220620 11:59:33.120" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220620 11:59:33.216" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220620 11:59:33.038" endtime="20220620 11:59:33.216"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:33.218" level="INFO">Clicking button '//input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:33.217" endtime="20220620 11:59:35.324"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:30.694" endtime="20220620 11:59:35.324"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.581" endtime="20220620 11:59:35.324"/>
+</test>
+<test id="s1-s1-t2" name="Select product category" line="14">
+<kw name="Product selection">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Product']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:35.669" level="INFO">Clicking element '//span[normalize-space()='Product']'.</msg>
+<status status="PASS" starttime="20220620 11:59:35.667" endtime="20220620 11:59:35.792"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 11:59:37.803" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:35.792" endtime="20220620 11:59:37.804"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Store demo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:37.806" level="INFO">Clicking element '//span[normalize-space()='Store demo']'.</msg>
+<status status="PASS" starttime="20220620 11:59:37.805" endtime="20220620 11:59:42.064"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//div[@class='stats-1']//a</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220620 11:59:42.065" endtime="20220620 11:59:42.528"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='stats-1']//a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:42.529" level="INFO">Clicking element '//div[@class='stats-1']//a'.</msg>
+<status status="PASS" starttime="20220620 11:59:42.528" endtime="20220620 11:59:46.245"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Title}</var>
+<arg>//h1[normalize-space()='Showcase. Live shops']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:46.321" level="INFO">${Title} = Showcase. Live shops</msg>
+<status status="PASS" starttime="20220620 11:59:46.246" endtime="20220620 11:59:46.321"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:46.322" endtime="20220620 11:59:46.323"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Title}</arg>
+<arg>Showcase. Live shops</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220620 11:59:46.323" endtime="20220620 11:59:46.324"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:35.665" endtime="20220620 11:59:46.325"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:35.325" endtime="20220620 11:59:46.325"/>
+</test>
+<test id="s1-s1-t3" name="switch window and verify page title" line="16">
+<kw name="Open Categories">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//div[normalize-space()='Smart Furniture']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:46.331" level="INFO">Clicking link '//div[normalize-space()='Smart Furniture']'.</msg>
+<msg timestamp="20220620 11:59:46.901" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220620 11:59:46.903" level="FAIL">Link with locator '//div[normalize-space()='Smart Furniture']' not found.</msg>
+<status status="FAIL" starttime="20220620 11:59:46.329" endtime="20220620 11:59:46.921"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:46.922" endtime="20220620 11:59:46.922"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:46.328" endtime="20220620 11:59:46.924"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:46.327" endtime="20220620 11:59:46.926">Link with locator '//div[normalize-space()='Smart Furniture']' not found.</status>
+</test>
+<test id="s1-s1-t4" name="Switch tab and verfiy data" line="18">
+<kw name="Switch tab and verfiy product name">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<msg timestamp="20220620 11:59:47.838" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220620 11:59:47.839" level="FAIL">Window with last index is same as the current window.</msg>
+<status status="FAIL" starttime="20220620 11:59:46.931" endtime="20220620 11:59:47.853"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[contains(text(),'Home Office')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.856" endtime="20220620 11:59:47.856"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>we are on volvo page</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.857" endtime="20220620 11:59:47.858"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[contains(text(),'Home Office')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.858" endtime="20220620 11:59:47.859"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${productName}</var>
+<arg>//a[text()='Kids Thermo Bottle']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.859" endtime="20220620 11:59:47.860"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${productName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.860" endtime="20220620 11:59:47.861"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//a[text()='Kids Thermo Bottle']</arg>
+<arg>Kids Thermo Bottle</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.861" endtime="20220620 11:59:47.862"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${nameofProduct}</var>
+<arg>//img[@title='Picture of Kids Thermo Bottle']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.863" endtime="20220620 11:59:47.863"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:46.929" endtime="20220620 11:59:47.866"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:46.928" endtime="20220620 11:59:47.872">Window with last index is same as the current window.</status>
+</test>
+<test id="s1-s1-t5" name="Listing all products from page" line="20">
+<kw name="check product names">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//a[@class='tool-link customerRole']//span[contains(text(),'Private')]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 11:59:47.884" level="INFO">Simulating Mouse Over on element '//a[@class='tool-link customerRole']//span[contains(text(),'Private')]'.</msg>
+<msg timestamp="20220620 11:59:49.196" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220620 11:59:49.197" level="FAIL">Element with locator '//a[@class='tool-link customerRole']//span[contains(text(),'Private')]' not found.</msg>
+<status status="FAIL" starttime="20220620 11:59:47.880" endtime="20220620 11:59:49.198"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='tool-link customerRole']//span[contains(text(),'Private')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.200" endtime="20220620 11:59:49.200"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@class='tool-link']//a[contains(text(),'Private')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.200" endtime="20220620 11:59:49.200"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{expectedList}</var>
+<arg>Kids Thermo Bottle</arg>
+<arg>Thermo Bottle</arg>
+<arg>Reimagined Laptop Sleeve</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.201" endtime="20220620 11:59:49.202"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${elements}</var>
+<arg>.ProductTitle</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.202" endtime="20220620 11:59:49.202"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${elements}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.202" endtime="20220620 11:59:49.203"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{actualList}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.203" endtime="20220620 11:59:49.204"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{elements}</value>
+<iter>
+<var name="${element}"/>
+<kw name="Log" library="BuiltIn">
+<arg>${element.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.205" endtime="20220620 11:59:49.205"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${actualList}</arg>
+<arg>${element.text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.206" endtime="20220620 11:59:49.206"/>
+</kw>
+<status status="NOT RUN" starttime="20220620 11:59:49.204" endtime="20220620 11:59:49.206"/>
+</iter>
+<status status="NOT RUN" starttime="20220620 11:59:49.204" endtime="20220620 11:59:49.206"/>
+</for>
+<kw name="Lists Should Be Equal" library="Collections">
+<arg>${expectedList}</arg>
+<arg>${actualList}</arg>
+<doc>Fails if given lists are unequal.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.207" endtime="20220620 11:59:49.207"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:47.877" endtime="20220620 11:59:49.209"/>
+</kw>
+<kw name="Closing the browser" library="resource">
+<status status="NOT RUN" starttime="20220620 11:59:49.209" endtime="20220620 11:59:49.210"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:47.875" endtime="20220620 11:59:49.211">Element with locator '//a[@class='tool-link customerRole']//span[contains(text(),'Private')]' not found.</status>
+</test>
+<doc>Validation if title of page is matching</doc>
+<status status="FAIL" starttime="20220620 11:59:15.068" endtime="20220620 11:59:49.214"/>
+</suite>
+<status status="FAIL" starttime="20220620 11:59:15.024" endtime="20220620 11:59:49.218"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="3" skip="0" id="s1" name="testCases">testCases</stat>
+<stat pass="2" fail="3" skip="0" id="s1-s1" name="TC 4">testCases.TC 4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

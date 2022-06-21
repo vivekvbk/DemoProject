@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220620 11:59:14.980" rpa="false" schemaversion="3">
+<suite id="s1" name="testCases" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases">
+<suite id="s1-s1" name="TC 5" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_5.robot">
+<test id="s1-s1-t1" name="Adding Product into cart" line="15">
+<kw name=" Opening resource url">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 11:59:15.550" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 11:59:15.550" endtime="20220620 11:59:19.845"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 11:59:19.847" level="INFO">Opening url 'https://smartfurniture.com/search/?search_query=queen+bed'</msg>
+<status status="PASS" starttime="20220620 11:59:19.845" endtime="20220620 11:59:37.047"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 11:59:37.048" endtime="20220620 11:59:37.270"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.549" endtime="20220620 11:59:37.271"/>
+</kw>
+<kw name="Adding product">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${productName}</var>
+<arg>(//div[@data-col='card-body'])[4]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:37.580" level="INFO">${productName} = Four Hands
+Newhall Queen Bed
+$1,799.00</msg>
+<status status="PASS" starttime="20220620 11:59:37.272" endtime="20220620 11:59:37.581"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${productNamea}</var>
+<arg>(//div[@data-col='card-body'])[4]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20220620 11:59:37.590" level="INFO">${productNamea} = &lt;selenium.webdriver.remote.webelement.WebElement (session="a01071c3bb171be03683f036cc836244", element="465c811c-badd-43c1-b570-36fd47f7805a")&gt;</msg>
+<status status="PASS" starttime="20220620 11:59:37.581" endtime="20220620 11:59:37.590"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${productName}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 11:59:37.591" level="INFO">Four Hands
+Newhall Queen Bed
+$1,799.00</msg>
+<status status="PASS" starttime="20220620 11:59:37.591" endtime="20220620 11:59:37.591"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${price}</var>
+<arg>//span[normalize-space()='$1,799.00']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:37.624" level="INFO">${price} = $1,799.00</msg>
+<status status="PASS" starttime="20220620 11:59:37.591" endtime="20220620 11:59:37.624"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${price}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 11:59:37.625" level="INFO">$1,799.00</msg>
+<status status="PASS" starttime="20220620 11:59:37.624" endtime="20220620 11:59:37.625"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//img[@title='Newhall Queen Bed'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:37.626" level="INFO">Clicking element '(//img[@title='Newhall Queen Bed'])[1]'.</msg>
+<status status="PASS" starttime="20220620 11:59:37.625" endtime="20220620 11:59:37.796"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 11:59:39.810" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:37.796" endtime="20220620 11:59:39.812"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>div.form-action</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20220620 12:00:11.668" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220620 12:00:11.670" level="FAIL">Element 'div.form-action' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20220620 11:59:39.812" endtime="20220620 12:00:11.677"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>div.form-action</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 12:00:11.678" endtime="20220620 12:00:11.678"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:37.272" endtime="20220620 12:00:11.679"/>
+</kw>
+<kw name="close browser">
+<status status="NOT RUN" starttime="20220620 12:00:11.680" endtime="20220620 12:00:11.680"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:15.547" endtime="20220620 12:00:11.681">Element 'div.form-action' not visible after 5 seconds.</status>
+</test>
+<doc>End to End Test</doc>
+<status status="FAIL" starttime="20220620 11:59:15.048" endtime="20220620 12:00:11.684"/>
+</suite>
+<status status="FAIL" starttime="20220620 11:59:15.002" endtime="20220620 12:00:11.686"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="testCases">testCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TC 5">testCases.TC 5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

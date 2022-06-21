@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220620 11:59:14.977" rpa="false" schemaversion="3">
+<suite id="s1" name="testCases" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases">
+<suite id="s1-s1" name="TC 3" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot">
+<test id="s1-s1-t1" name="Login into npcommerce" line="13">
+<kw name="Opening Browser" library="resource">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Login into Nopcommerce</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:15.605" endtime="20220620 11:59:15.606"/>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 11:59:15.607" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 11:59:15.606" endtime="20220620 11:59:19.769"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 11:59:19.773" level="INFO">Opening url 'https://www.nopcommerce.com/en'</msg>
+<status status="PASS" starttime="20220620 11:59:19.771" endtime="20220620 11:59:40.607"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 11:59:40.607" endtime="20220620 11:59:40.902"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.603" endtime="20220620 11:59:40.903"/>
+</kw>
+<kw name="LoginTest" library="resource">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>(//*[name()='svg'])[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 11:59:40.907" level="INFO">Simulating Mouse Over on element '(//*[name()='svg'])[2]'.</msg>
+<status status="PASS" starttime="20220620 11:59:40.905" endtime="20220620 11:59:41.265"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:41.268" level="INFO">Clicking element '//span[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:41.266" endtime="20220620 11:59:44.395"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:44.397" level="INFO">Typing text 'vivekvbk' into text field 'id:Username'.</msg>
+<status status="PASS" starttime="20220620 11:59:44.396" endtime="20220620 11:59:44.696"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:44.698" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20220620 11:59:44.905" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220620 11:59:45.230" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220620 11:59:44.696" endtime="20220620 11:59:45.230"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:45.232" level="INFO">Clicking button '//input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:45.231" endtime="20220620 11:59:51.231"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:40.904" endtime="20220620 11:59:51.232"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.598" endtime="20220620 11:59:51.233"/>
+</test>
+<test id="s1-s1-t2" name="Select product category" line="16">
+<kw name="Product selection">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Product']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:51.241" level="INFO">Clicking element '//span[normalize-space()='Product']'.</msg>
+<status status="PASS" starttime="20220620 11:59:51.240" endtime="20220620 11:59:51.491"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 11:59:53.495" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:51.492" endtime="20220620 11:59:53.495"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Store demo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:53.499" level="INFO">Clicking element '//span[normalize-space()='Store demo']'.</msg>
+<status status="PASS" starttime="20220620 11:59:53.496" endtime="20220620 11:59:56.107"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//div[@class='stats-1']//a</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220620 11:59:56.108" endtime="20220620 11:59:56.425"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='stats-1']//a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:56.426" level="INFO">Clicking element '//div[@class='stats-1']//a'.</msg>
+<status status="PASS" starttime="20220620 11:59:56.425" endtime="20220620 11:59:58.985"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Title}</var>
+<arg>//h1[normalize-space()='Showcase. Live shops']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:59.050" level="INFO">${Title} = Showcase. Live shops</msg>
+<status status="PASS" starttime="20220620 11:59:58.986" endtime="20220620 11:59:59.050"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:59.051" endtime="20220620 11:59:59.052"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Title}</arg>
+<arg>Showcase. Live shops</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220620 11:59:59.053" endtime="20220620 11:59:59.054"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:51.238" endtime="20220620 11:59:59.056"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:51.236" endtime="20220620 11:59:59.057"/>
+</test>
+<test id="s1-s1-t3" name="switch window and verify page title" line="18">
+<kw name="Open Categories">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//a[normalize-space()='collection.volvocars.com']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:59.063" level="INFO">Clicking link '//a[normalize-space()='collection.volvocars.com']'.</msg>
+<status status="PASS" starttime="20220620 11:59:59.061" endtime="20220620 11:59:59.219"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 12:00:02.228" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:59.219" endtime="20220620 12:00:02.229"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:59.060" endtime="20220620 12:00:02.229"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:59.058" endtime="20220620 12:00:02.230"/>
+</test>
+<test id="s1-s1-t4" name="Switch tab and verfiy data" line="20">
+<kw name="Switch tab and verfiy product name">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220620 12:00:02.234" endtime="20220620 12:00:02.287"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@name='Private']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:02.288" level="INFO">Clicking element '//input[@name='Private']'.</msg>
+<status status="PASS" starttime="20220620 12:00:02.287" endtime="20220620 12:00:09.870"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>we are on volvo page</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:09.871" endtime="20220620 12:00:09.872"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[text()='Kids Thermo Bottle']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220620 12:00:09.872" endtime="20220620 12:00:10.222"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${productName}</var>
+<arg>//a[text()='Kids Thermo Bottle']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:10.313" level="INFO">${productName} = Kids Thermo Bottle</msg>
+<status status="PASS" starttime="20220620 12:00:10.224" endtime="20220620 12:00:10.313"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${productName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:10.314" endtime="20220620 12:00:10.315"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//a[text()='Kids Thermo Bottle']</arg>
+<arg>Kids Thermo Bottle</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220620 12:00:10.316" level="INFO">Verifying element '//a[text()='Kids Thermo Bottle']' contains exact text 'Kids Thermo Bottle'.</msg>
+<status status="PASS" starttime="20220620 12:00:10.315" endtime="20220620 12:00:10.354"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${nameofProduct}</var>
+<arg>//img[@title='Picture of Kids Thermo Bottle']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:10.526" level="INFO">${nameofProduct} = </msg>
+<status status="PASS" starttime="20220620 12:00:10.355" endtime="20220620 12:00:10.527"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//img[@title='Picture of Kids Thermo Bottle']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:10.530" level="INFO">Clicking element '//img[@title='Picture of Kids Thermo Bottle']'.</msg>
+<status status="PASS" starttime="20220620 12:00:10.530" endtime="20220620 12:00:14.015"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[text()='Add to cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:14.016" level="INFO">Clicking element '//button[text()='Add to cart']'.</msg>
+<status status="PASS" starttime="20220620 12:00:14.016" endtime="20220620 12:00:14.134"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:02.233" endtime="20220620 12:00:14.134"/>
+</kw>
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<msg timestamp="20220620 12:00:14.203" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<status status="FAIL" starttime="20220620 12:00:14.202" endtime="20220620 12:00:14.203"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.201" endtime="20220620 12:00:14.206"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.200" endtime="20220620 12:00:14.207"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.199" endtime="20220620 12:00:14.208"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.198" endtime="20220620 12:00:14.209"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.197" endtime="20220620 12:00:14.210"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.196" endtime="20220620 12:00:14.211"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.195" endtime="20220620 12:00:14.211"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.194" endtime="20220620 12:00:14.212"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.193" endtime="20220620 12:00:14.213"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.193" endtime="20220620 12:00:14.213"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.191" endtime="20220620 12:00:14.214"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.190" endtime="20220620 12:00:14.214"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.189" endtime="20220620 12:00:14.214"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.189" endtime="20220620 12:00:14.215"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.188" endtime="20220620 12:00:14.215"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.187" endtime="20220620 12:00:14.216"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.187" endtime="20220620 12:00:14.216"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.186" endtime="20220620 12:00:14.217"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.186" endtime="20220620 12:00:14.218"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.185" endtime="20220620 12:00:14.219"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.184" endtime="20220620 12:00:14.220"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.184" endtime="20220620 12:00:14.221"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.183" endtime="20220620 12:00:14.222"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.183" endtime="20220620 12:00:14.222"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.182" endtime="20220620 12:00:14.223"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.182" endtime="20220620 12:00:14.224"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.181" endtime="20220620 12:00:14.224"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.180" endtime="20220620 12:00:14.225"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.180" endtime="20220620 12:00:14.225"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.180" endtime="20220620 12:00:14.226"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.179" endtime="20220620 12:00:14.226"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.179" endtime="20220620 12:00:14.227"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.178" endtime="20220620 12:00:14.227"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.177" endtime="20220620 12:00:14.227"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.177" endtime="20220620 12:00:14.228"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.176" endtime="20220620 12:00:14.228"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.176" endtime="20220620 12:00:14.228"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.175" endtime="20220620 12:00:14.229"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.175" endtime="20220620 12:00:14.229"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.174" endtime="20220620 12:00:14.230"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.174" endtime="20220620 12:00:14.230"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.173" endtime="20220620 12:00:14.231"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.172" endtime="20220620 12:00:14.231"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.171" endtime="20220620 12:00:14.231"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.171" endtime="20220620 12:00:14.232"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.170" endtime="20220620 12:00:14.232"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.170" endtime="20220620 12:00:14.232"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.169" endtime="20220620 12:00:14.233"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.169" endtime="20220620 12:00:14.234"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.168" endtime="20220620 12:00:14.234"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.168" endtime="20220620 12:00:14.235"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.168" endtime="20220620 12:00:14.236"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.167" endtime="20220620 12:00:14.236"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.166" endtime="20220620 12:00:14.237"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.166" endtime="20220620 12:00:14.237"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.165" endtime="20220620 12:00:14.238"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.165" endtime="20220620 12:00:14.239"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.165" endtime="20220620 12:00:14.240"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.164" endtime="20220620 12:00:14.242"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.163" endtime="20220620 12:00:14.243"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.163" endtime="20220620 12:00:14.243"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.163" endtime="20220620 12:00:14.244"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.162" endtime="20220620 12:00:14.244"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.162" endtime="20220620 12:00:14.245"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.161" endtime="20220620 12:00:14.245"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.161" endtime="20220620 12:00:14.246"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.160" endtime="20220620 12:00:14.246"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.159" endtime="20220620 12:00:14.247"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.159" endtime="20220620 12:00:14.247"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.158" endtime="20220620 12:00:14.248"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.157" endtime="20220620 12:00:14.248"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.157" endtime="20220620 12:00:14.249"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.156" endtime="20220620 12:00:14.249"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.155" endtime="20220620 12:00:14.249"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.154" endtime="20220620 12:00:14.250"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.154" endtime="20220620 12:00:14.250"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.153" endtime="20220620 12:00:14.251"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.152" endtime="20220620 12:00:14.251"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.152" endtime="20220620 12:00:14.252"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.151" endtime="20220620 12:00:14.252"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.150" endtime="20220620 12:00:14.253"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.149" endtime="20220620 12:00:14.253"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.148" endtime="20220620 12:00:14.253"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.148" endtime="20220620 12:00:14.254"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.147" endtime="20220620 12:00:14.255"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.146" endtime="20220620 12:00:14.256"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.145" endtime="20220620 12:00:14.260"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.144" endtime="20220620 12:00:14.261"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.144" endtime="20220620 12:00:14.262"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.142" endtime="20220620 12:00:14.262"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.141" endtime="20220620 12:00:14.263"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.140" endtime="20220620 12:00:14.264"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.139" endtime="20220620 12:00:14.265"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.139" endtime="20220620 12:00:14.266"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.137" endtime="20220620 12:00:14.266"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.137" endtime="20220620 12:00:14.267"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.136" endtime="20220620 12:00:14.267"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.135" endtime="20220620 12:00:14.268"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.135" endtime="20220620 12:00:14.268"/>
+</kw>
+<kw name="closing the browser">
+<status status="NOT RUN" starttime="20220620 12:00:14.269" endtime="20220620 12:00:14.269"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:02.232" endtime="20220620 12:00:14.271">Maximum limit of started keywords and control structures exceeded.</status>
+</test>
+<doc>Validation if title of page is matching</doc>
+<status status="FAIL" starttime="20220620 11:59:15.051" endtime="20220620 12:00:14.274"/>
+</suite>
+<status status="FAIL" starttime="20220620 11:59:15.003" endtime="20220620 12:00:14.279"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="testCases">testCases</stat>
+<stat pass="3" fail="1" skip="0" id="s1-s1" name="TC 3">testCases.TC 3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

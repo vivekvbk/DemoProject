@@ -1,0 +1,1805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 5.0.1 (Python 3.10.5 on win32)" generated="20220620 12:00:29.488" rpa="false" schemaversion="3">
+<suite id="s1" name="testCases" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases">
+<suite id="s1-s1" name="TC 1" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_1.robot">
+<test id="s1-s1-t1" name="Valid credentials" line="16">
+<kw name="Opening Browser" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 11:59:15.524" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 11:59:15.524" endtime="20220620 11:59:19.863"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 11:59:19.864" level="INFO">Opening url 'https://www.nopcommerce.com/en'</msg>
+<status status="PASS" starttime="20220620 11:59:19.863" endtime="20220620 11:59:29.842"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 11:59:29.843" endtime="20220620 11:59:30.285"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.523" endtime="20220620 11:59:30.286"/>
+</kw>
+<kw name="LoginTest">
+<arg>vivekvbk</arg>
+<arg>12345678vk</arg>
+<arg>https://www.nopcommerce.com/en</arg>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>(//*[name()='svg'])[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 11:59:30.290" level="INFO">Simulating Mouse Over on element '(//*[name()='svg'])[2]'.</msg>
+<status status="PASS" starttime="20220620 11:59:30.288" endtime="20220620 11:59:30.938"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:30.939" level="INFO">Clicking element '//span[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:30.939" endtime="20220620 11:59:50.198"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:50.201" level="INFO">Typing text 'vivekvbk' into text field 'id:Username'.</msg>
+<status status="PASS" starttime="20220620 11:59:50.200" endtime="20220620 11:59:50.421"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:50.423" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20220620 11:59:50.518" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220620 11:59:50.709" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220620 11:59:50.421" endtime="20220620 11:59:50.710"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:50.711" level="INFO">Clicking button '//input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:50.710" endtime="20220620 11:59:55.456"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 11:59:57.465" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:55.456" endtime="20220620 11:59:57.466"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${currentpageUrl}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220620 11:59:57.830" level="INFO">${currentpageUrl} = https://www.nopcommerce.com/en</msg>
+<status status="PASS" starttime="20220620 11:59:57.468" endtime="20220620 11:59:57.830"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${currentpageUrl}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:57.831" endtime="20220620 11:59:57.832"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${currentUrl}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220620 11:59:57.925" level="INFO">Current location is 'https://www.nopcommerce.com/en'.</msg>
+<status status="PASS" starttime="20220620 11:59:57.833" endtime="20220620 11:59:57.925"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:30.286" endtime="20220620 11:59:57.926"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220620 11:59:57.927" endtime="20220620 12:00:01.132"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.522" endtime="20220620 12:00:01.133"/>
+</test>
+<test id="s1-s1-t2" name="Invalid credentials" line="17">
+<kw name="Opening Browser" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 12:00:01.157" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 12:00:01.155" endtime="20220620 12:00:03.449"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 12:00:03.450" level="INFO">Opening url 'https://www.nopcommerce.com/en'</msg>
+<status status="PASS" starttime="20220620 12:00:03.450" endtime="20220620 12:00:08.613"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 12:00:08.614" endtime="20220620 12:00:09.295"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:01.154" endtime="20220620 12:00:09.296"/>
+</kw>
+<kw name="LoginTest">
+<arg>uio</arg>
+<arg>fhsdjsKl</arg>
+<arg>https://www.nopcommerce.com/en/login?returnurl=%2Fen</arg>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>(//*[name()='svg'])[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 12:00:09.301" level="INFO">Simulating Mouse Over on element '(//*[name()='svg'])[2]'.</msg>
+<status status="PASS" starttime="20220620 12:00:09.299" endtime="20220620 12:00:09.672"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:09.675" level="INFO">Clicking element '//span[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220620 12:00:09.673" endtime="20220620 12:00:11.785"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:11.788" level="INFO">Typing text 'uio' into text field 'id:Username'.</msg>
+<status status="PASS" starttime="20220620 12:00:11.786" endtime="20220620 12:00:11.945"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:11.946" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20220620 12:00:12.018" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220620 12:00:12.145" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220620 12:00:11.945" endtime="20220620 12:00:12.145"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:12.148" level="INFO">Clicking button '//input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20220620 12:00:12.146" endtime="20220620 12:00:14.047"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 12:00:16.057" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220620 12:00:14.047" endtime="20220620 12:00:16.057"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${currentpageUrl}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220620 12:00:16.064" level="INFO">${currentpageUrl} = https://www.nopcommerce.com/en/login?returnurl=%2Fen</msg>
+<status status="PASS" starttime="20220620 12:00:16.058" endtime="20220620 12:00:16.064"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${currentpageUrl}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:16.065" endtime="20220620 12:00:16.066"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${currentUrl}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20220620 12:00:16.070" level="INFO">Current location is 'https://www.nopcommerce.com/en/login?returnurl=%2Fen'.</msg>
+<status status="PASS" starttime="20220620 12:00:16.066" endtime="20220620 12:00:16.071"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:09.297" endtime="20220620 12:00:16.071"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220620 12:00:16.072" endtime="20220620 12:00:19.228"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:01.135" endtime="20220620 12:00:19.229"/>
+</test>
+<status status="PASS" starttime="20220620 11:59:15.043" endtime="20220620 12:00:19.231"/>
+</suite>
+<suite id="s1-s2" name="TC 2" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_2.robot">
+<test id="s1-s2-t1" name="Invalid username" line="15">
+<kw name="Opening Browser" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 11:59:15.631" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 11:59:15.630" endtime="20220620 11:59:19.845"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 11:59:19.847" level="INFO">Opening url 'https://www.nopcommerce.com/en'</msg>
+<status status="PASS" starttime="20220620 11:59:19.845" endtime="20220620 11:59:29.620"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 11:59:29.621" endtime="20220620 11:59:29.998"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.629" endtime="20220620 11:59:30.000"/>
+</kw>
+<kw name="LoginTest">
+<arg>xlsdata</arg>
+<arg>learning</arg>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>(//*[name()='svg'])[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 11:59:30.007" level="INFO">Simulating Mouse Over on element '(//*[name()='svg'])[2]'.</msg>
+<status status="PASS" starttime="20220620 11:59:30.005" endtime="20220620 11:59:30.893"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:30.894" level="INFO">Clicking element '//span[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:30.893" endtime="20220620 11:59:48.739"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:48.741" level="INFO">Typing text 'xlsdata' into text field 'id:Username'.</msg>
+<status status="PASS" starttime="20220620 11:59:48.739" endtime="20220620 11:59:49.264"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:49.266" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20220620 11:59:49.347" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220620 11:59:49.464" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220620 11:59:49.265" endtime="20220620 11:59:49.464"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:49.466" level="INFO">Clicking button '//input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:49.465" endtime="20220620 11:59:51.945"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:30.003" endtime="20220620 11:59:51.946"/>
+</kw>
+<kw name="Closing the browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220620 11:59:51.949" endtime="20220620 11:59:55.284"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:51.947" endtime="20220620 11:59:55.285"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.626" endtime="20220620 11:59:55.285"/>
+</test>
+<test id="s1-s2-t2" name="Invalid password" line="15">
+<kw name="Opening Browser" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 11:59:55.294" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 11:59:55.293" endtime="20220620 11:59:58.608"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 11:59:58.609" level="INFO">Opening url 'https://www.nopcommerce.com/en'</msg>
+<status status="PASS" starttime="20220620 11:59:58.608" endtime="20220620 12:00:20.711"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 12:00:20.712" endtime="20220620 12:00:20.861"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:55.291" endtime="20220620 12:00:20.862"/>
+</kw>
+<kw name="LoginTest">
+<arg>Vivek123</arg>
+<arg>robotxyz</arg>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>(//*[name()='svg'])[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 12:00:20.864" level="INFO">Simulating Mouse Over on element '(//*[name()='svg'])[2]'.</msg>
+<status status="PASS" starttime="20220620 12:00:20.863" endtime="20220620 12:00:21.215"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:21.217" level="INFO">Clicking element '//span[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220620 12:00:21.216" endtime="20220620 12:00:23.637"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:23.640" level="INFO">Typing text 'Vivek123' into text field 'id:Username'.</msg>
+<status status="PASS" starttime="20220620 12:00:23.639" endtime="20220620 12:00:23.820"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:23.822" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20220620 12:00:23.884" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220620 12:00:23.977" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220620 12:00:23.820" endtime="20220620 12:00:23.977"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:23.978" level="INFO">Clicking button '//input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20220620 12:00:23.977" endtime="20220620 12:00:26.620"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:20.862" endtime="20220620 12:00:26.622"/>
+</kw>
+<kw name="Closing the browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220620 12:00:26.625" endtime="20220620 12:00:28.945"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:26.623" endtime="20220620 12:00:28.946"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:55.287" endtime="20220620 12:00:28.946"/>
+</test>
+<status status="PASS" starttime="20220620 11:59:15.045" endtime="20220620 12:00:28.947"/>
+</suite>
+<suite id="s1-s3" name="TC 3" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot">
+<test id="s1-s3-t1" name="Login into npcommerce" line="13">
+<kw name="Opening Browser" library="resource">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Login into Nopcommerce</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:15.605" endtime="20220620 11:59:15.606"/>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 11:59:15.607" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 11:59:15.606" endtime="20220620 11:59:19.769"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 11:59:19.773" level="INFO">Opening url 'https://www.nopcommerce.com/en'</msg>
+<status status="PASS" starttime="20220620 11:59:19.771" endtime="20220620 11:59:40.607"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 11:59:40.607" endtime="20220620 11:59:40.902"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.603" endtime="20220620 11:59:40.903"/>
+</kw>
+<kw name="LoginTest" library="resource">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>(//*[name()='svg'])[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 11:59:40.907" level="INFO">Simulating Mouse Over on element '(//*[name()='svg'])[2]'.</msg>
+<status status="PASS" starttime="20220620 11:59:40.905" endtime="20220620 11:59:41.265"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:41.268" level="INFO">Clicking element '//span[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:41.266" endtime="20220620 11:59:44.395"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:44.397" level="INFO">Typing text 'vivekvbk' into text field 'id:Username'.</msg>
+<status status="PASS" starttime="20220620 11:59:44.396" endtime="20220620 11:59:44.696"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:44.698" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20220620 11:59:44.905" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220620 11:59:45.230" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220620 11:59:44.696" endtime="20220620 11:59:45.230"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:45.232" level="INFO">Clicking button '//input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:45.231" endtime="20220620 11:59:51.231"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:40.904" endtime="20220620 11:59:51.232"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.598" endtime="20220620 11:59:51.233"/>
+</test>
+<test id="s1-s3-t2" name="Select product category" line="16">
+<kw name="Product selection">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Product']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:51.241" level="INFO">Clicking element '//span[normalize-space()='Product']'.</msg>
+<status status="PASS" starttime="20220620 11:59:51.240" endtime="20220620 11:59:51.491"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 11:59:53.495" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:51.492" endtime="20220620 11:59:53.495"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Store demo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:53.499" level="INFO">Clicking element '//span[normalize-space()='Store demo']'.</msg>
+<status status="PASS" starttime="20220620 11:59:53.496" endtime="20220620 11:59:56.107"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//div[@class='stats-1']//a</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220620 11:59:56.108" endtime="20220620 11:59:56.425"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='stats-1']//a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:56.426" level="INFO">Clicking element '//div[@class='stats-1']//a'.</msg>
+<status status="PASS" starttime="20220620 11:59:56.425" endtime="20220620 11:59:58.985"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Title}</var>
+<arg>//h1[normalize-space()='Showcase. Live shops']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:59.050" level="INFO">${Title} = Showcase. Live shops</msg>
+<status status="PASS" starttime="20220620 11:59:58.986" endtime="20220620 11:59:59.050"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:59.051" endtime="20220620 11:59:59.052"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Title}</arg>
+<arg>Showcase. Live shops</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220620 11:59:59.053" endtime="20220620 11:59:59.054"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:51.238" endtime="20220620 11:59:59.056"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:51.236" endtime="20220620 11:59:59.057"/>
+</test>
+<test id="s1-s3-t3" name="switch window and verify page title" line="18">
+<kw name="Open Categories">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//a[normalize-space()='collection.volvocars.com']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:59.063" level="INFO">Clicking link '//a[normalize-space()='collection.volvocars.com']'.</msg>
+<status status="PASS" starttime="20220620 11:59:59.061" endtime="20220620 11:59:59.219"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 12:00:02.228" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:59.219" endtime="20220620 12:00:02.229"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:59.060" endtime="20220620 12:00:02.229"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:59.058" endtime="20220620 12:00:02.230"/>
+</test>
+<test id="s1-s3-t4" name="Switch tab and verfiy data" line="20">
+<kw name="Switch tab and verfiy product name">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220620 12:00:02.234" endtime="20220620 12:00:02.287"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@name='Private']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:02.288" level="INFO">Clicking element '//input[@name='Private']'.</msg>
+<status status="PASS" starttime="20220620 12:00:02.287" endtime="20220620 12:00:09.870"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>we are on volvo page</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:09.871" endtime="20220620 12:00:09.872"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[text()='Kids Thermo Bottle']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220620 12:00:09.872" endtime="20220620 12:00:10.222"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${productName}</var>
+<arg>//a[text()='Kids Thermo Bottle']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:10.313" level="INFO">${productName} = Kids Thermo Bottle</msg>
+<status status="PASS" starttime="20220620 12:00:10.224" endtime="20220620 12:00:10.313"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${productName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:10.314" endtime="20220620 12:00:10.315"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//a[text()='Kids Thermo Bottle']</arg>
+<arg>Kids Thermo Bottle</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220620 12:00:10.316" level="INFO">Verifying element '//a[text()='Kids Thermo Bottle']' contains exact text 'Kids Thermo Bottle'.</msg>
+<status status="PASS" starttime="20220620 12:00:10.315" endtime="20220620 12:00:10.354"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${nameofProduct}</var>
+<arg>//img[@title='Picture of Kids Thermo Bottle']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:10.526" level="INFO">${nameofProduct} = </msg>
+<status status="PASS" starttime="20220620 12:00:10.355" endtime="20220620 12:00:10.527"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//img[@title='Picture of Kids Thermo Bottle']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:10.530" level="INFO">Clicking element '//img[@title='Picture of Kids Thermo Bottle']'.</msg>
+<status status="PASS" starttime="20220620 12:00:10.530" endtime="20220620 12:00:14.015"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[text()='Add to cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:14.016" level="INFO">Clicking element '//button[text()='Add to cart']'.</msg>
+<status status="PASS" starttime="20220620 12:00:14.016" endtime="20220620 12:00:14.134"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:02.233" endtime="20220620 12:00:14.134"/>
+</kw>
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<kw name="Accept cookies">
+<msg timestamp="20220620 12:00:14.203" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<status status="FAIL" starttime="20220620 12:00:14.202" endtime="20220620 12:00:14.203"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.201" endtime="20220620 12:00:14.206"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.200" endtime="20220620 12:00:14.207"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.199" endtime="20220620 12:00:14.208"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.198" endtime="20220620 12:00:14.209"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.197" endtime="20220620 12:00:14.210"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.196" endtime="20220620 12:00:14.211"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.195" endtime="20220620 12:00:14.211"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.194" endtime="20220620 12:00:14.212"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.193" endtime="20220620 12:00:14.213"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.193" endtime="20220620 12:00:14.213"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.191" endtime="20220620 12:00:14.214"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.190" endtime="20220620 12:00:14.214"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.189" endtime="20220620 12:00:14.214"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.189" endtime="20220620 12:00:14.215"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.188" endtime="20220620 12:00:14.215"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.187" endtime="20220620 12:00:14.216"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.187" endtime="20220620 12:00:14.216"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.186" endtime="20220620 12:00:14.217"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.186" endtime="20220620 12:00:14.218"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.185" endtime="20220620 12:00:14.219"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.184" endtime="20220620 12:00:14.220"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.184" endtime="20220620 12:00:14.221"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.183" endtime="20220620 12:00:14.222"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.183" endtime="20220620 12:00:14.222"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.182" endtime="20220620 12:00:14.223"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.182" endtime="20220620 12:00:14.224"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.181" endtime="20220620 12:00:14.224"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.180" endtime="20220620 12:00:14.225"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.180" endtime="20220620 12:00:14.225"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.180" endtime="20220620 12:00:14.226"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.179" endtime="20220620 12:00:14.226"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.179" endtime="20220620 12:00:14.227"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.178" endtime="20220620 12:00:14.227"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.177" endtime="20220620 12:00:14.227"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.177" endtime="20220620 12:00:14.228"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.176" endtime="20220620 12:00:14.228"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.176" endtime="20220620 12:00:14.228"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.175" endtime="20220620 12:00:14.229"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.175" endtime="20220620 12:00:14.229"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.174" endtime="20220620 12:00:14.230"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.174" endtime="20220620 12:00:14.230"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.173" endtime="20220620 12:00:14.231"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.172" endtime="20220620 12:00:14.231"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.171" endtime="20220620 12:00:14.231"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.171" endtime="20220620 12:00:14.232"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.170" endtime="20220620 12:00:14.232"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.170" endtime="20220620 12:00:14.232"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.169" endtime="20220620 12:00:14.233"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.169" endtime="20220620 12:00:14.234"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.168" endtime="20220620 12:00:14.234"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.168" endtime="20220620 12:00:14.235"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.168" endtime="20220620 12:00:14.236"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.167" endtime="20220620 12:00:14.236"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.166" endtime="20220620 12:00:14.237"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.166" endtime="20220620 12:00:14.237"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.165" endtime="20220620 12:00:14.238"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.165" endtime="20220620 12:00:14.239"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.165" endtime="20220620 12:00:14.240"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.164" endtime="20220620 12:00:14.242"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.163" endtime="20220620 12:00:14.243"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.163" endtime="20220620 12:00:14.243"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.163" endtime="20220620 12:00:14.244"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.162" endtime="20220620 12:00:14.244"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.162" endtime="20220620 12:00:14.245"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.161" endtime="20220620 12:00:14.245"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.161" endtime="20220620 12:00:14.246"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.160" endtime="20220620 12:00:14.246"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.159" endtime="20220620 12:00:14.247"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.159" endtime="20220620 12:00:14.247"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.158" endtime="20220620 12:00:14.248"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.157" endtime="20220620 12:00:14.248"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.157" endtime="20220620 12:00:14.249"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.156" endtime="20220620 12:00:14.249"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.155" endtime="20220620 12:00:14.249"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.154" endtime="20220620 12:00:14.250"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.154" endtime="20220620 12:00:14.250"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.153" endtime="20220620 12:00:14.251"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.152" endtime="20220620 12:00:14.251"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.152" endtime="20220620 12:00:14.252"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.151" endtime="20220620 12:00:14.252"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.150" endtime="20220620 12:00:14.253"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.149" endtime="20220620 12:00:14.253"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.148" endtime="20220620 12:00:14.253"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.148" endtime="20220620 12:00:14.254"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.147" endtime="20220620 12:00:14.255"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.146" endtime="20220620 12:00:14.256"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.145" endtime="20220620 12:00:14.260"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.144" endtime="20220620 12:00:14.261"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.144" endtime="20220620 12:00:14.262"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.142" endtime="20220620 12:00:14.262"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.141" endtime="20220620 12:00:14.263"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.140" endtime="20220620 12:00:14.264"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.139" endtime="20220620 12:00:14.265"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.139" endtime="20220620 12:00:14.266"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.137" endtime="20220620 12:00:14.266"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.137" endtime="20220620 12:00:14.267"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.136" endtime="20220620 12:00:14.267"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.135" endtime="20220620 12:00:14.268"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:14.135" endtime="20220620 12:00:14.268"/>
+</kw>
+<kw name="closing the browser">
+<status status="NOT RUN" starttime="20220620 12:00:14.269" endtime="20220620 12:00:14.269"/>
+</kw>
+<status status="FAIL" starttime="20220620 12:00:02.232" endtime="20220620 12:00:14.271">Maximum limit of started keywords and control structures exceeded.</status>
+</test>
+<doc>Validation if title of page is matching</doc>
+<status status="FAIL" starttime="20220620 11:59:15.051" endtime="20220620 12:00:14.274"/>
+</suite>
+<suite id="s1-s4" name="TC 4" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot">
+<test id="s1-s4-t1" name="Login into npcommerce" line="11">
+<kw name="Opening Browser" library="resource">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Login into Nopcommerce</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:15.584" endtime="20220620 11:59:15.584"/>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 11:59:15.585" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 11:59:15.585" endtime="20220620 11:59:19.852"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 11:59:19.854" level="INFO">Opening url 'https://www.nopcommerce.com/en'</msg>
+<status status="PASS" starttime="20220620 11:59:19.852" endtime="20220620 11:59:30.460"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 11:59:30.461" endtime="20220620 11:59:30.693"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.582" endtime="20220620 11:59:30.693"/>
+</kw>
+<kw name="LoginTest" library="resource">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>(//*[name()='svg'])[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 11:59:30.697" level="INFO">Simulating Mouse Over on element '(//*[name()='svg'])[2]'.</msg>
+<status status="PASS" starttime="20220620 11:59:30.695" endtime="20220620 11:59:31.044"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:31.046" level="INFO">Clicking element '//span[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:31.045" endtime="20220620 11:59:32.810"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:32.811" level="INFO">Typing text 'vivekvbk' into text field 'id:Username'.</msg>
+<status status="PASS" starttime="20220620 11:59:32.810" endtime="20220620 11:59:33.038"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:33.039" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20220620 11:59:33.120" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220620 11:59:33.216" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220620 11:59:33.038" endtime="20220620 11:59:33.216"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:33.218" level="INFO">Clicking button '//input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:33.217" endtime="20220620 11:59:35.324"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:30.694" endtime="20220620 11:59:35.324"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.581" endtime="20220620 11:59:35.324"/>
+</test>
+<test id="s1-s4-t2" name="Select product category" line="14">
+<kw name="Product selection">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Product']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:35.669" level="INFO">Clicking element '//span[normalize-space()='Product']'.</msg>
+<status status="PASS" starttime="20220620 11:59:35.667" endtime="20220620 11:59:35.792"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 11:59:37.803" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:35.792" endtime="20220620 11:59:37.804"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Store demo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:37.806" level="INFO">Clicking element '//span[normalize-space()='Store demo']'.</msg>
+<status status="PASS" starttime="20220620 11:59:37.805" endtime="20220620 11:59:42.064"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//div[@class='stats-1']//a</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220620 11:59:42.065" endtime="20220620 11:59:42.528"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='stats-1']//a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:42.529" level="INFO">Clicking element '//div[@class='stats-1']//a'.</msg>
+<status status="PASS" starttime="20220620 11:59:42.528" endtime="20220620 11:59:46.245"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Title}</var>
+<arg>//h1[normalize-space()='Showcase. Live shops']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:46.321" level="INFO">${Title} = Showcase. Live shops</msg>
+<status status="PASS" starttime="20220620 11:59:46.246" endtime="20220620 11:59:46.321"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:46.322" endtime="20220620 11:59:46.323"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Title}</arg>
+<arg>Showcase. Live shops</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220620 11:59:46.323" endtime="20220620 11:59:46.324"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:35.665" endtime="20220620 11:59:46.325"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:35.325" endtime="20220620 11:59:46.325"/>
+</test>
+<test id="s1-s4-t3" name="switch window and verify page title" line="16">
+<kw name="Open Categories">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//div[normalize-space()='Smart Furniture']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:46.331" level="INFO">Clicking link '//div[normalize-space()='Smart Furniture']'.</msg>
+<msg timestamp="20220620 11:59:46.901" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="3-selenium-screenshot-1.png"&gt;&lt;img src="3-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220620 11:59:46.903" level="FAIL">Link with locator '//div[normalize-space()='Smart Furniture']' not found.</msg>
+<status status="FAIL" starttime="20220620 11:59:46.329" endtime="20220620 11:59:46.921"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:46.922" endtime="20220620 11:59:46.922"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:46.328" endtime="20220620 11:59:46.924"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:46.327" endtime="20220620 11:59:46.926">Link with locator '//div[normalize-space()='Smart Furniture']' not found.</status>
+</test>
+<test id="s1-s4-t4" name="Switch tab and verfiy data" line="18">
+<kw name="Switch tab and verfiy product name">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<msg timestamp="20220620 11:59:47.838" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="3-selenium-screenshot-2.png"&gt;&lt;img src="3-selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220620 11:59:47.839" level="FAIL">Window with last index is same as the current window.</msg>
+<status status="FAIL" starttime="20220620 11:59:46.931" endtime="20220620 11:59:47.853"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[contains(text(),'Home Office')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.856" endtime="20220620 11:59:47.856"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>we are on volvo page</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.857" endtime="20220620 11:59:47.858"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//a[contains(text(),'Home Office')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.858" endtime="20220620 11:59:47.859"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${productName}</var>
+<arg>//a[text()='Kids Thermo Bottle']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.859" endtime="20220620 11:59:47.860"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${productName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.860" endtime="20220620 11:59:47.861"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>//a[text()='Kids Thermo Bottle']</arg>
+<arg>Kids Thermo Bottle</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.861" endtime="20220620 11:59:47.862"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${nameofProduct}</var>
+<arg>//img[@title='Picture of Kids Thermo Bottle']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:47.863" endtime="20220620 11:59:47.863"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:46.929" endtime="20220620 11:59:47.866"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:46.928" endtime="20220620 11:59:47.872">Window with last index is same as the current window.</status>
+</test>
+<test id="s1-s4-t5" name="Listing all products from page" line="20">
+<kw name="check product names">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//a[@class='tool-link customerRole']//span[contains(text(),'Private')]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 11:59:47.884" level="INFO">Simulating Mouse Over on element '//a[@class='tool-link customerRole']//span[contains(text(),'Private')]'.</msg>
+<msg timestamp="20220620 11:59:49.196" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="3-selenium-screenshot-3.png"&gt;&lt;img src="3-selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220620 11:59:49.197" level="FAIL">Element with locator '//a[@class='tool-link customerRole']//span[contains(text(),'Private')]' not found.</msg>
+<status status="FAIL" starttime="20220620 11:59:47.880" endtime="20220620 11:59:49.198"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@class='tool-link customerRole']//span[contains(text(),'Private')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.200" endtime="20220620 11:59:49.200"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@class='tool-link']//a[contains(text(),'Private')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.200" endtime="20220620 11:59:49.200"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{expectedList}</var>
+<arg>Kids Thermo Bottle</arg>
+<arg>Thermo Bottle</arg>
+<arg>Reimagined Laptop Sleeve</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.201" endtime="20220620 11:59:49.202"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${elements}</var>
+<arg>.ProductTitle</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.202" endtime="20220620 11:59:49.202"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${elements}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.202" endtime="20220620 11:59:49.203"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{actualList}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.203" endtime="20220620 11:59:49.204"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{elements}</value>
+<iter>
+<var name="${element}"/>
+<kw name="Log" library="BuiltIn">
+<arg>${element.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.205" endtime="20220620 11:59:49.205"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${actualList}</arg>
+<arg>${element.text}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.206" endtime="20220620 11:59:49.206"/>
+</kw>
+<status status="NOT RUN" starttime="20220620 11:59:49.204" endtime="20220620 11:59:49.206"/>
+</iter>
+<status status="NOT RUN" starttime="20220620 11:59:49.204" endtime="20220620 11:59:49.206"/>
+</for>
+<kw name="Lists Should Be Equal" library="Collections">
+<arg>${expectedList}</arg>
+<arg>${actualList}</arg>
+<doc>Fails if given lists are unequal.</doc>
+<status status="NOT RUN" starttime="20220620 11:59:49.207" endtime="20220620 11:59:49.207"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:47.877" endtime="20220620 11:59:49.209"/>
+</kw>
+<kw name="Closing the browser" library="resource">
+<status status="NOT RUN" starttime="20220620 11:59:49.209" endtime="20220620 11:59:49.210"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:47.875" endtime="20220620 11:59:49.211">Element with locator '//a[@class='tool-link customerRole']//span[contains(text(),'Private')]' not found.</status>
+</test>
+<doc>Validation if title of page is matching</doc>
+<status status="FAIL" starttime="20220620 11:59:15.068" endtime="20220620 11:59:49.214"/>
+</suite>
+<suite id="s1-s5" name="TC 5" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_5.robot">
+<test id="s1-s5-t1" name="Adding Product into cart" line="15">
+<kw name=" Opening resource url">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 11:59:15.550" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 11:59:15.550" endtime="20220620 11:59:19.845"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 11:59:19.847" level="INFO">Opening url 'https://smartfurniture.com/search/?search_query=queen+bed'</msg>
+<status status="PASS" starttime="20220620 11:59:19.845" endtime="20220620 11:59:37.047"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 11:59:37.048" endtime="20220620 11:59:37.270"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.549" endtime="20220620 11:59:37.271"/>
+</kw>
+<kw name="Adding product">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${productName}</var>
+<arg>(//div[@data-col='card-body'])[4]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:37.580" level="INFO">${productName} = Four Hands
+Newhall Queen Bed
+$1,799.00</msg>
+<status status="PASS" starttime="20220620 11:59:37.272" endtime="20220620 11:59:37.581"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${productNamea}</var>
+<arg>(//div[@data-col='card-body'])[4]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20220620 11:59:37.590" level="INFO">${productNamea} = &lt;selenium.webdriver.remote.webelement.WebElement (session="a01071c3bb171be03683f036cc836244", element="465c811c-badd-43c1-b570-36fd47f7805a")&gt;</msg>
+<status status="PASS" starttime="20220620 11:59:37.581" endtime="20220620 11:59:37.590"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${productName}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 11:59:37.591" level="INFO">Four Hands
+Newhall Queen Bed
+$1,799.00</msg>
+<status status="PASS" starttime="20220620 11:59:37.591" endtime="20220620 11:59:37.591"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${price}</var>
+<arg>//span[normalize-space()='$1,799.00']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:37.624" level="INFO">${price} = $1,799.00</msg>
+<status status="PASS" starttime="20220620 11:59:37.591" endtime="20220620 11:59:37.624"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${price}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 11:59:37.625" level="INFO">$1,799.00</msg>
+<status status="PASS" starttime="20220620 11:59:37.624" endtime="20220620 11:59:37.625"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//img[@title='Newhall Queen Bed'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:37.626" level="INFO">Clicking element '(//img[@title='Newhall Queen Bed'])[1]'.</msg>
+<status status="PASS" starttime="20220620 11:59:37.625" endtime="20220620 11:59:37.796"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 11:59:39.810" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:37.796" endtime="20220620 11:59:39.812"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>div.form-action</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20220620 12:00:11.668" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="4-selenium-screenshot-1.png"&gt;&lt;img src="4-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220620 12:00:11.670" level="FAIL">Element 'div.form-action' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20220620 11:59:39.812" endtime="20220620 12:00:11.677"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>div.form-action</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220620 12:00:11.678" endtime="20220620 12:00:11.678"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:37.272" endtime="20220620 12:00:11.679"/>
+</kw>
+<kw name="close browser">
+<status status="NOT RUN" starttime="20220620 12:00:11.680" endtime="20220620 12:00:11.680"/>
+</kw>
+<status status="FAIL" starttime="20220620 11:59:15.547" endtime="20220620 12:00:11.681">Element 'div.form-action' not visible after 5 seconds.</status>
+</test>
+<doc>End to End Test</doc>
+<status status="FAIL" starttime="20220620 11:59:15.048" endtime="20220620 12:00:11.684"/>
+</suite>
+<suite id="s1-s6" name="TC 7" source="C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_7.robot">
+<test id="s1-s6-t1" name="Login into npcommerce" line="12">
+<kw name="Opening Browser" library="resource">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Login into Nopcommerce</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:15.631" endtime="20220620 11:59:15.632"/>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path=/Users/Vivek/Documents/chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20220620 11:59:15.634" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20220620 11:59:15.633" endtime="20220620 11:59:22.069"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220620 11:59:22.070" level="INFO">Opening url 'https://www.nopcommerce.com/en'</msg>
+<status status="PASS" starttime="20220620 11:59:22.069" endtime="20220620 11:59:30.091"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220620 11:59:30.093" endtime="20220620 11:59:30.422"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.630" endtime="20220620 11:59:30.423"/>
+</kw>
+<kw name="LoginTest" library="resource">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>(//*[name()='svg'])[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220620 11:59:30.431" level="INFO">Simulating Mouse Over on element '(//*[name()='svg'])[2]'.</msg>
+<status status="PASS" starttime="20220620 11:59:30.426" endtime="20220620 11:59:30.781"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:30.787" level="INFO">Clicking element '//span[normalize-space()='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:30.782" endtime="20220620 11:59:33.506"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:33.509" level="INFO">Typing text 'vivekvbk' into text field 'id:Username'.</msg>
+<status status="PASS" starttime="20220620 11:59:33.508" endtime="20220620 11:59:33.705"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:33.707" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20220620 11:59:33.774" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220620 11:59:33.893" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220620 11:59:33.705" endtime="20220620 11:59:33.893"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//input[@value='Log in']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:33.894" level="INFO">Clicking button '//input[@value='Log in']'.</msg>
+<status status="PASS" starttime="20220620 11:59:33.894" endtime="20220620 11:59:36.208"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:30.424" endtime="20220620 11:59:36.209"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:15.629" endtime="20220620 11:59:36.210"/>
+</test>
+<test id="s1-s6-t2" name="Select product category" line="17">
+<kw name="Product selection" library="homePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Product']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:36.220" level="INFO">Clicking element '//span[normalize-space()='Product']'.</msg>
+<status status="PASS" starttime="20220620 11:59:36.219" endtime="20220620 11:59:36.541"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 11:59:38.543" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:36.542" endtime="20220620 11:59:38.544"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[normalize-space()='Store demo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:38.548" level="INFO">Clicking element '//span[normalize-space()='Store demo']'.</msg>
+<status status="PASS" starttime="20220620 11:59:38.545" endtime="20220620 11:59:40.981"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//div[@class='stats-1']//a</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220620 11:59:40.982" endtime="20220620 11:59:41.576"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@class='stats-1']//a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:41.578" level="INFO">Clicking element '//div[@class='stats-1']//a'.</msg>
+<status status="PASS" starttime="20220620 11:59:41.577" endtime="20220620 11:59:44.502"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Title}</var>
+<arg>//h1[normalize-space()='Showcase. Live shops']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:44.589" level="INFO">${Title} = Showcase. Live shops</msg>
+<status status="PASS" starttime="20220620 11:59:44.503" endtime="20220620 11:59:44.590"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 11:59:44.590" endtime="20220620 11:59:44.592"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Title}</arg>
+<arg>Showcase. Live shops</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220620 11:59:44.593" endtime="20220620 11:59:44.595"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:36.216" endtime="20220620 11:59:44.595"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:36.213" endtime="20220620 11:59:44.596"/>
+</test>
+<test id="s1-s6-t3" name="switch window and verify page title" line="21">
+<kw name="Open Categories" library="homePage">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//div[normalize-space()='Smart Furniture']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220620 11:59:44.603" endtime="20220620 11:59:44.933"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>(//a[normalize-space()='smartfurniture.com'])[1]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:44.934" level="INFO">Clicking link '(//a[normalize-space()='smartfurniture.com'])[1]'.</msg>
+<status status="PASS" starttime="20220620 11:59:44.934" endtime="20220620 11:59:46.283"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220620 11:59:46.284" endtime="20220620 11:59:46.302"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 11:59:51.321" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220620 11:59:46.303" endtime="20220620 11:59:51.322"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:44.601" endtime="20220620 11:59:51.323"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:44.599" endtime="20220620 11:59:51.324"/>
+</test>
+<test id="s1-s6-t4" name="Switch tab and verfiy data" line="25">
+<kw name="search product" library="homePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id="search_query"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 11:59:51.342" level="INFO">Clicking element '//input[@id="search_query"]'.</msg>
+<status status="PASS" starttime="20220620 11:59:51.340" endtime="20220620 12:00:11.320"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id="search_query"]</arg>
+<arg>queen bed</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:11.321" level="INFO">Typing text 'queen bed' into text field '//input[@id="search_query"]'.</msg>
+<status status="PASS" starttime="20220620 12:00:11.320" endtime="20220620 12:00:11.445"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:11.446" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220620 12:00:11.445" endtime="20220620 12:00:11.566"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220620 12:00:16.572" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220620 12:00:11.567" endtime="20220620 12:00:16.578"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${verification}</var>
+<arg>(//h1[contains(text(),'Search Results')])[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:22.285" level="INFO">${verification} = Search Results for "queen bed"</msg>
+<status status="PASS" starttime="20220620 12:00:16.579" endtime="20220620 12:00:22.285"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${verification}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.286" level="INFO">Search Results for "queen bed"</msg>
+<status status="PASS" starttime="20220620 12:00:22.285" endtime="20220620 12:00:22.286"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${verification}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.287" endtime="20220620 12:00:22.288"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${verification}</arg>
+<arg>queen bed</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20220620 12:00:22.289" endtime="20220620 12:00:22.289"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:51.338" endtime="20220620 12:00:22.289"/>
+</kw>
+<status status="PASS" starttime="20220620 11:59:51.325" endtime="20220620 12:00:22.290"/>
+</test>
+<test id="s1-s6-t5" name="Product list page" line="29">
+<kw name="get all product list" library="homePage">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${products}</var>
+<arg>css:.card-title</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20220620 12:00:22.309" level="INFO">${products} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="c0e93c6c-62ed-4925-9556-7eee24a924aa")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20220620 12:00:22.292" endtime="20220620 12:00:22.309"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{actualList}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220620 12:00:22.310" level="INFO">@{actualList} = [ ]</msg>
+<status status="PASS" starttime="20220620 12:00:22.309" endtime="20220620 12:00:22.310"/>
+</kw>
+<for flavor="IN">
+<var>${product}</var>
+<value>@{products}</value>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="c0e93c6c-62ed-4925-9556-7eee24a924aa")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.329" level="INFO">New Standard Bed by Blu Dot</msg>
+<status status="PASS" starttime="20220620 12:00:22.311" endtime="20220620 12:00:22.329"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.329" endtime="20220620 12:00:22.339"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.311" endtime="20220620 12:00:22.339"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="763e9e26-69b7-4582-a2f1-ccc4ffeafb81")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.356" level="INFO">Nook Queen Bed by Blu Dot</msg>
+<status status="PASS" starttime="20220620 12:00:22.340" endtime="20220620 12:00:22.356"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.357" endtime="20220620 12:00:22.368"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.339" endtime="20220620 12:00:22.368"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="20f49102-41ec-465e-9ae2-e543659bdb3d")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.385" level="INFO">LAX Series Queen Platform Bed by MASHstudios</msg>
+<status status="PASS" starttime="20220620 12:00:22.369" endtime="20220620 12:00:22.386"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.386" endtime="20220620 12:00:22.414"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.369" endtime="20220620 12:00:22.415"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="f62bcf0a-83f7-42bf-a4b4-e1a31cd96cb1")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.448" level="INFO">Newhall Queen Bed</msg>
+<status status="PASS" starttime="20220620 12:00:22.415" endtime="20220620 12:00:22.448"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.448" endtime="20220620 12:00:22.460"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.415" endtime="20220620 12:00:22.460"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="d5cf9d8f-3154-4b57-8f5e-39b77c5a86db")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.481" level="INFO">Versatile 101'' Queen Wall Bed Kit</msg>
+<status status="PASS" starttime="20220620 12:00:22.461" endtime="20220620 12:00:22.481"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.481" endtime="20220620 12:00:22.493"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.460" endtime="20220620 12:00:22.494"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="4384021f-96ce-4e2b-8563-2d2748e4cab6")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.513" level="INFO">Versatile 115'' Queen Wall Bed Kit with Drawers</msg>
+<status status="PASS" starttime="20220620 12:00:22.494" endtime="20220620 12:00:22.513"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.513" endtime="20220620 12:00:22.527"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.494" endtime="20220620 12:00:22.527"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="e7afb5cc-4004-4ba1-91a3-e938ca01918e")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.549" level="INFO">Azara Queen Platform Bed</msg>
+<status status="PASS" starttime="20220620 12:00:22.528" endtime="20220620 12:00:22.549"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.549" endtime="20220620 12:00:22.565"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.527" endtime="20220620 12:00:22.565"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="d6d65139-aa1c-49a1-a048-bf60ee66106e")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.584" level="INFO">Sienna Queen Platform Bed</msg>
+<status status="PASS" starttime="20220620 12:00:22.566" endtime="20220620 12:00:22.584"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.585" endtime="20220620 12:00:22.596"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.566" endtime="20220620 12:00:22.597"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="7e06b175-c67d-4908-a848-4518e4e7f86d")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.616" level="INFO">Currant Queen Platform Bed</msg>
+<status status="PASS" starttime="20220620 12:00:22.597" endtime="20220620 12:00:22.616"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.617" endtime="20220620 12:00:22.630"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.597" endtime="20220620 12:00:22.630"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="54496781-2285-4c97-b66d-c8faa879cfb2")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.699" level="INFO">Round Off Queen Bed</msg>
+<status status="PASS" starttime="20220620 12:00:22.631" endtime="20220620 12:00:22.700"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.700" endtime="20220620 12:00:22.720"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.630" endtime="20220620 12:00:22.721"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="2f5ba67e-71d7-49be-a65e-4b9b0bdfe224")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.751" level="INFO">Colin Queen Bed</msg>
+<status status="PASS" starttime="20220620 12:00:22.722" endtime="20220620 12:00:22.751"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.752" endtime="20220620 12:00:22.771"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.721" endtime="20220620 12:00:22.771"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="81a6ca45-7311-402c-9b1e-ea727ba7bc14")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.800" level="INFO">Astrid Queen Bed by Copeland Furniture</msg>
+<status status="PASS" starttime="20220620 12:00:22.774" endtime="20220620 12:00:22.800"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.801" endtime="20220620 12:00:22.813"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.772" endtime="20220620 12:00:22.813"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="766808af-1c75-4508-bfe3-cef90acdcb39")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.831" level="INFO">Nelson Thin Edge Queen Bed by Herman Miller</msg>
+<status status="PASS" starttime="20220620 12:00:22.813" endtime="20220620 12:00:22.831"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.831" endtime="20220620 12:00:22.847"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.813" endtime="20220620 12:00:22.847"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="eaacdcc9-099d-44da-b40f-25ca56052ffc")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.902" level="INFO">Carmichael Bed by Gus Modern</msg>
+<status status="PASS" starttime="20220620 12:00:22.848" endtime="20220620 12:00:22.902"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.903" endtime="20220620 12:00:22.924"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.848" endtime="20220620 12:00:22.924"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="9e45027d-42e0-458c-b155-5b65d349851b")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:22.955" level="INFO">Cherry Grove Queen Low Poster Bed by American Drew</msg>
+<status status="PASS" starttime="20220620 12:00:22.925" endtime="20220620 12:00:22.955"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:22.956" endtime="20220620 12:00:22.977"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.925" endtime="20220620 12:00:22.977"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="8c79f270-9d38-4f71-aa58-04abcdab4532")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:23.006" level="INFO">Oyster Bay Arbor Hills Upholstered Bed by Lexington</msg>
+<status status="PASS" starttime="20220620 12:00:22.978" endtime="20220620 12:00:23.006"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:23.006" endtime="20220620 12:00:23.020"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.977" endtime="20220620 12:00:23.020"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="cdde060c-0783-4307-b076-bfe62622a8e3")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:23.047" level="INFO">Oyster Bay Sag Harbor Tufted Upholstered Bed by Lexington</msg>
+<status status="PASS" starttime="20220620 12:00:23.020" endtime="20220620 12:00:23.047"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:23.047" endtime="20220620 12:00:23.067"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:23.020" endtime="20220620 12:00:23.067"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="5face6ed-5767-4360-9d11-c98fde575c3f")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:23.098" level="INFO">LAX Series Queen Headboard Shelf by MASHstudios</msg>
+<status status="PASS" starttime="20220620 12:00:23.068" endtime="20220620 12:00:23.099"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:23.099" endtime="20220620 12:00:23.114"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:23.067" endtime="20220620 12:00:23.115"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="5ef474cd-9ff7-4736-b035-3a987537db64")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:23.185" level="INFO">Oyster Bay Arbor Hills Upholstered Headboard by Lexington</msg>
+<status status="PASS" starttime="20220620 12:00:23.116" endtime="20220620 12:00:23.185"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:23.185" endtime="20220620 12:00:23.200"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:23.116" endtime="20220620 12:00:23.200"/>
+</iter>
+<iter>
+<var name="${product}">&lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="bbda055b-ed35-4afe-98f5-03e9ef40376b")&gt;</var>
+<kw name="Log" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:23.220" level="INFO">Oyster Bay Sag Harbor Tufted Upholstered Headboard by Lexington</msg>
+<status status="PASS" starttime="20220620 12:00:23.201" endtime="20220620 12:00:23.220"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${product.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220620 12:00:23.221" endtime="20220620 12:00:23.233"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:23.200" endtime="20220620 12:00:23.233"/>
+</iter>
+<status status="PASS" starttime="20220620 12:00:22.310" endtime="20220620 12:00:23.233"/>
+</for>
+<status status="PASS" starttime="20220620 12:00:22.291" endtime="20220620 12:00:23.233"/>
+</kw>
+<kw name="Adding product">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${productName}</var>
+<arg>(//a[normalize-space()="Versatile 101'' Queen Wall Bed Kit"])[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:23.270" level="INFO">${productName} = Versatile 101'' Queen Wall Bed Kit</msg>
+<status status="PASS" starttime="20220620 12:00:23.234" endtime="20220620 12:00:23.270"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${productNamea}</var>
+<arg>(//a[normalize-space()="Versatile 101'' Queen Wall Bed Kit"])[1]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20220620 12:00:23.281" level="INFO">${productNamea} = &lt;selenium.webdriver.remote.webelement.WebElement (session="f9bcf5bce41b6e115e504f6b5f02ae8b", element="534e7597-2671-49e9-afe2-d257370a48f9")&gt;</msg>
+<status status="PASS" starttime="20220620 12:00:23.270" endtime="20220620 12:00:23.281"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${productName}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:23.282" level="INFO">Versatile 101'' Queen Wall Bed Kit</msg>
+<status status="PASS" starttime="20220620 12:00:23.281" endtime="20220620 12:00:23.282"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${price}</var>
+<arg>//span[normalize-space()='$2,979.99']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:23.324" level="INFO">${price} = $2,979.99</msg>
+<status status="PASS" starttime="20220620 12:00:23.282" endtime="20220620 12:00:23.324"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${price}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220620 12:00:23.325" level="INFO">$2,979.99</msg>
+<status status="PASS" starttime="20220620 12:00:23.324" endtime="20220620 12:00:23.325"/>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>(//a[normalize-space()="Versatile 101'' Queen Wall Bed Kit"])[1]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220620 12:00:23.325" endtime="20220620 12:00:23.380"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//a[normalize-space()="Versatile 101'' Queen Wall Bed Kit"])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220620 12:00:23.386" level="INFO">Clicking element '(//a[normalize-space()="Versatile 101'' Queen Wall Bed Kit"])[1]'.</msg>
+<status status="PASS" starttime="20220620 12:00:23.383" endtime="20220620 12:00:23.535"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:23.234" endtime="20220620 12:00:23.536"/>
+</kw>
+<kw name="Closing the browser" library="resource">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220620 12:00:23.538" endtime="20220620 12:00:25.903"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:23.536" endtime="20220620 12:00:25.904"/>
+</kw>
+<status status="PASS" starttime="20220620 12:00:22.290" endtime="20220620 12:00:25.904"/>
+</test>
+<doc>End to End Test</doc>
+<status status="PASS" starttime="20220620 11:59:15.048" endtime="20220620 12:00:25.906"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 6 executions.</doc>
+<status status="FAIL" starttime="20220620 11:59:14.999" endtime="20220620 12:00:28.950"/>
+</suite>
+<statistics>
+<total>
+<stat pass="14" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="14" fail="5" skip="0" id="s1" name="testCases">testCases</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="TC 1">testCases.TC 1</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2" name="TC 2">testCases.TC 2</stat>
+<stat pass="3" fail="1" skip="0" id="s1-s3" name="TC 3">testCases.TC 3</stat>
+<stat pass="2" fail="3" skip="0" id="s1-s4" name="TC 4">testCases.TC 4</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s5" name="TC 5">testCases.TC 5</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s6" name="TC 7">testCases.TC 7</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220620 11:59:15.520" level="ERROR">Error in file 'C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_1.robot' on line 6: Resource file '..\resources\wait.py' does not exist.</msg>
+</errors>
+</robot>

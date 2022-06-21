@@ -1,0 +1,45 @@
+==============================================================================
+testCases                                                                     
+==============================================================================
+testCases.TC 7 :: End to End Test                                             
+==============================================================================
+Login into npcommerce                                                 Login into Nopcommerce
+| PASS |
+------------------------------------------------------------------------------
+Select product category                                               Showcase. Live shops
+| PASS |
+------------------------------------------------------------------------------
+switch window and verify page title                                   | PASS |
+------------------------------------------------------------------------------
+Switch tab and verfiy data                                            Search Results for "queen bed"
+| PASS |
+------------------------------------------------------------------------------
+Product list page                                                     New Standard Bed by Blu Dot
+Nook Queen Bed by Blu Dot
+LAX Series Queen Platform Bed by MASHstudios
+Newhall Queen Bed
+Versatile 101'' Queen Wall Bed Kit
+Versatile 115'' Queen Wall Bed Kit with Drawers
+Azara Queen Platform Bed
+Sienna Queen Platform Bed
+Currant Queen Platform Bed
+Round Off Queen Bed
+Colin Queen Bed
+Astrid Queen Bed by Copeland Furniture
+Nelson Thin Edge Queen Bed by Herman Miller
+Carmichael Bed by Gus Modern
+Cherry Grove Queen Low Poster Bed by American Drew
+Oyster Bay Arbor Hills Upholstered Bed by Lexington
+Oyster Bay Sag Harbor Tufted Upholstered Bed by Lexington
+LAX Series Queen Headboard Shelf by MASHstudios
+Oyster Bay Arbor Hills Upholstered Headboard by Lexington
+Oyster Bay Sag Harbor Tufted Upholstered Headboard by Lexington
+| PASS |
+------------------------------------------------------------------------------
+testCases.TC 7 :: End to End Test                                     | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+testCases                                                             | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Vivek\PycharmProjects\DemoProject\pabot_results\5\output.xml

@@ -1,0 +1,63 @@
+==============================================================================
+testCases                                                                     
+==============================================================================
+testCases.TC 4 :: Validation if title of page is matching                     
+==============================================================================
+Login into npcommerce                                                 Login into Nopcommerce
+| PASS |
+------------------------------------------------------------------------------
+Select product category                                               Showcase. Live shops
+| PASS |
+------------------------------------------------------------------------------
+switch window and verify page title                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot:16
+    T:  switch window and verify page title    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot:17
+      Open Categories    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot:41
+      Click Link    //div[normalize-space()='Smart Furniture']
+______________________________________________________________________________
+| FAIL |
+Link with locator '//div[normalize-space()='Smart Furniture']' not found.
+------------------------------------------------------------------------------
+Switch tab and verfiy data                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot:18
+    T:  Switch tab and verfiy data    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot:19
+      Switch tab and verfiy product name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot:45
+      Switch Window    NEW
+______________________________________________________________________________
+| FAIL |
+Window with last index is same as the current window.
+------------------------------------------------------------------------------
+Listing all products from page                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot:20
+    T:  Listing all products from page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot:21
+      check product names    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_4.robot:56
+      Mouse Over    //a[@class='tool-link customerRole']//span[contains(text(),'Private')]
+______________________________________________________________________________
+| FAIL |
+Element with locator '//a[@class='tool-link customerRole']//span[contains(text(),'Private')]' not found.
+------------------------------------------------------------------------------
+testCases.TC 4 :: Validation if title of page is matching             | FAIL |
+5 tests, 2 passed, 3 failed
+==============================================================================
+testCases                                                             | FAIL |
+5 tests, 2 passed, 3 failed
+==============================================================================
+Output:  C:\Users\Vivek\PycharmProjects\DemoProject\pabot_results\3\output.xml

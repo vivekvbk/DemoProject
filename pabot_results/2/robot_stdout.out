@@ -1,0 +1,331 @@
+==============================================================================
+testCases                                                                     
+==============================================================================
+testCases.TC 3 :: Validation if title of page is matching                     
+==============================================================================
+Login into npcommerce                                                 Login into Nopcommerce
+| PASS |
+------------------------------------------------------------------------------
+Select product category                                               Showcase. Live shops
+| PASS |
+------------------------------------------------------------------------------
+switch window and verify page title                                   | PASS |
+------------------------------------------------------------------------------
+Switch tab and verfiy data                                            we are on volvo page
+Kids Thermo Bottle
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:20
+    T:  Switch tab and verfiy data    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:22
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Vivek\PycharmProjects\DemoProject\testCases\TC_3.robot:60
+      Accept cookies    
+______________________________________________________________________________
+| FAIL |
+Maximum limit of started keywords and control structures exceeded.
+------------------------------------------------------------------------------
+testCases.TC 3 :: Validation if title of page is matching             | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+testCases                                                             | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Vivek\PycharmProjects\DemoProject\pabot_results\2\output.xml

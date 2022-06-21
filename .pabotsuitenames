@@ -1,0 +1,10 @@
+datasources:7aabcf995665beb8abf89c6eb515512579d5872d
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:70d884b656de5208d6b3ed69204530c5e1d056d6
+--suite testCases.TC 1
+--suite testCases.TC 2
+--suite testCases.TC 3
+--suite testCases.TC 4
+--suite testCases.TC 5
+--suite testCases.TC 7
